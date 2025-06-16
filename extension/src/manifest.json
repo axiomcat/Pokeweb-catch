@@ -9,14 +9,15 @@
 		"48": "assets/img/icon-48.png",
 		"128": "assets/img/icon-128.png"
 	},
-  "content_scripts": [
-    {
-      "js": ["script.js"],
-      "matches": [
-        "https://developer.chrome.com/docs/extensions/*",
-        "https://developer.chrome.com/docs/webstore/*",
-		"https://*/*"
-      ]
-    }
-  ]
+	"content_scripts": [
+		{
+			"js": ["script.js"],
+			"css": ["styles.css"],
+			"matches": [
+				"https://developer.chrome.com/docs/extensions/*",
+				"https://developer.chrome.com/docs/webstore/*",
+				"https://*/*"
+			]
+		}
+	]
 }
